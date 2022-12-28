@@ -10,7 +10,7 @@
 
     <div class="social-links">
         <a
-            href="https://github.com/meetmistry0/"
+            href="https://github.com/meet-mistry/"
             class="links"
             target="_blank"
             rel="noopener noreferrer"
