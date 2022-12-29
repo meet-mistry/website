@@ -91,16 +91,16 @@ h5,
 h6 {
   font-family: var(--font-heading);
   letter-spacing: -0.03em;
+  margin-bottom: auto;
 }
 
-h1>a,
+/* h1>a,
 h2>a,
 h3>a,
 h4>a,
 h5>a,
 h6>a {
   text-decoration: none;
-  /* border-bottom: 0.12em dotted var(--color-secondary); */
   text-decoration-line: underline;
   text-decoration-style: dotted;
   text-decoration-color: var(--color-secondary);
@@ -121,11 +121,10 @@ h3>a:hover,
 h4>a:hover,
 h5>a:hover,
 h6>a:hover {
-  /* border-bottom: 0.12em dotted var(--color-accent); */
   text-decoration-line: underline;
   text-decoration-style: dotted;
   text-decoration-color: var(--color-accent);
-}
+} */
 
 blockquote {
   margin-left: calc(-1 * 1.5rem);
