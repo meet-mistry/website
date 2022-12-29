@@ -1,7 +1,7 @@
 ---
 title: Not taking things personally
 date: 01-09-2021
-# description: Understanding why people say what they say in tense situations.
+description: Understanding why people say what they say in tense situations.
 ---
 
 > ***'That’s irrational.'***

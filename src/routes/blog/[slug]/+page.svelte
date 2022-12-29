@@ -2,13 +2,13 @@
     // @ts-nocheck
 
     export let data;
-    const { title, date } = data;
+    const { title, date, description } = data;
     import BackToTop from "$lib/BackToTop.svelte";
 </script>
 
 <svelte:head>
     <title>Blog | {title}</title>
-    <!-- <meta name="description" content={description} /> -->
+    <meta name="description" content={description} />
 </svelte:head>
 
 <article>

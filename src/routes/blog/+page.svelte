@@ -14,21 +14,19 @@
 
     {#each data.posts as post}
         <h1>
-            <a
-                class="post-title"
-                href={post.path}
-                style="text-decoration: none;"
-            >
+            <a class="post-title" href={post.path}>
                 {post.meta.title}
             </a>
         </h1>
         <p class="meta">{post.meta.date}</p>
+        <p class="meta">{post.meta.description}</p>
     {/each}
 </main>
 
 <style>
     .post-title {
         color: var(--color-accent);
+        text-decoration: none;
     }
 
     .meta {
