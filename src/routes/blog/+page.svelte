@@ -1,3 +1,9 @@
+<script>
+    // @ts-nocheck
+
+    export let data;
+</script>
+
 <svelte:head>
     <title>Blog | Meet Mistry</title>
     <meta name="description" content="Personal blog" />
@@ -5,4 +11,29 @@
 
 <main>
     <h1 class="page-title">Posts</h1>
+
+    {#each data.posts as post}
+        <h1>
+            <a
+                class="post-title"
+                href={post.path}
+                style="text-decoration: none;"
+            >
+                {post.meta.title}
+            </a>
+        </h1>
+        <p class="meta">{post.meta.date}</p>
+    {/each}
 </main>
+
+<style>
+    .post-title {
+        color: var(--color-accent);
+    }
+
+    .meta {
+        margin: 0;
+        color: var(--color-secondary);
+        font-weight: bold;
+    }
+</style>
