@@ -1,5 +1,6 @@
-// @ts-ignore
-export async function load({ params }) {
+import type { PageLoad } from './$types';
+
+export const load = (async ({ params }) => {
     const post = await import(`../${params.slug}.md`)
     const { title, date, description } = post.metadata
     const content = post.default
@@ -10,4 +11,4 @@ export async function load({ params }) {
         date,
         description
     }
-}
+}) satisfies PageLoad;
