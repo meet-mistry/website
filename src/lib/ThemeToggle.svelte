@@ -33,6 +33,7 @@
 <main>
   <label class="theme-switch" for="checkbox">
     <input type="checkbox" id="checkbox" />
+    <!-- svelte-ignore element_invalid_self_closing_tag -->
     <div class="slider round" />
   </label>
 </main>
