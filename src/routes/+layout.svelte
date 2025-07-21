@@ -1,5 +1,4 @@
 <script>
-    export const prerender = true;
     import { page } from "$app/stores";
     import ThemeToggle from "$lib/ThemeToggle.svelte";
     import Transition from "$lib/PageTransition.svelte";
