@@ -1,5 +1,5 @@
 <script>
-    import { page } from "$app/stores";
+    import { page } from "$app/state";
     import ThemeToggle from "$lib/ThemeToggle.svelte";
     import Transition from "$lib/PageTransition.svelte";
 </script>
@@ -12,7 +12,7 @@
 </nav>
 
 <main>
-    <Transition url={$page.url}>
+    <Transition url={page.url}>
         <slot />
     </Transition>
 </main>
